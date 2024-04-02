@@ -1,15 +1,15 @@
-// ------------ Callbacks
-function orderPizza(callback) {
-  setTimeout(function () {
-    callback('Your pizza is ready!');
-  }, 3000); // Simulating 30 minutes of wait time
-}
+// // ------------ Callbacks
+// function orderPizza(callback) {
+//   setTimeout(function () {
+//     callback('Your pizza is ready!');
+//   }, 3000); // Simulating 30 minutes of wait time
+// }
 
-function callback(message) {
-  console.log(message);
-}
+// function callback(message) {
+//   console.log(message);
+// }
 
-orderPizza(callback);
+// orderPizza(callback);
 
 // ------------- Promises
 function orderPizza() {
@@ -20,11 +20,11 @@ function orderPizza() {
   });
 }
 
-orderPizza().then(function (message) {
-  console.log(message);
-});
+// orderPizza().then(function (message) {
+//   console.log(message);
+// });
 
-// ----------- Async-await
+// // ----------- Async-await
 async function orderAndDeliverPizza() {
   const message = await orderPizza();
   console.log(message);
