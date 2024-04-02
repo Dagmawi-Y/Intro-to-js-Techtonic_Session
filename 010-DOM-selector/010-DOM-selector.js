@@ -1,4 +1,4 @@
-// element selectors = Methods used to target and manipulate HTML elements 
+// element selectors = Methods used to target and manipulate HTML elements
 //                                     They allow you to select one or multiple HTML elements
 //                                     from the DOM (Document Object Model)
 
@@ -10,22 +10,22 @@
 
 // ---------- getElementById() ----------
 
-const myHeading = document.getElementById("my-heading");
-myHeading.style.backgroundColor = "yellow";
-myHeading.style.textAlign = "center";
+const myHeading = document.getElementById('my-heading');
+myHeading.style.backgroundColor = 'yellow';
+myHeading.style.textAlign = 'center';
 
 // ---------- getElementsByClassName() ----------
 
-const fruits = document.getElementsByClassName("fruits");
+const fruits = document.getElementsByClassName('fruits');
 
-Array.from(fruits).forEach(fruit => {
-    fruit.style.backgroundColor = "yellow";
+Array.from(fruits).forEach((fruit) => {
+  fruit.style.backgroundColor = 'yellow';
 });
 
 // ---------- getElementsByTagName() ----------
 
-const h4Elements = document.getElementsByTagName("h4");
-const liElements = document.getElementsByTagName("li");
+const h4Elements = document.getElementsByTagName('h4');
+const liElements = document.getElementsByTagName('li');
 
 // liElements[0].style.backgroundColor = "lightgreen";
 
